@@ -1,0 +1,11 @@
+.Tilt {
+  background: linear-gradient(89deg, #f11712 0%, #0099f7 100%);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline;
+}
+
+.logo {
+  padding: 0.2em 0.5em 0em;
+}
