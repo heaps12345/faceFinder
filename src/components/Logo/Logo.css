@@ -3,9 +3,19 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  display: inline;
+  display: block;
+  height: 105px;
 }
 
 .logo {
-  padding: 0.2em 0.5em 0em;
+  padding: 0.2em 0.3em;
+}
+
+@media only screen and (max-width: 569px) {
+  .Tilt {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
 }

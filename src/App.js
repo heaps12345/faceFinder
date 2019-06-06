@@ -9,6 +9,7 @@ import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
+import { slide as Menu } from 'react-burger-menu';
 import Profile from './components/Profile/Profile';
 import Leaderboard from './components/Leaderboard/Leaderboard';
 import axios from 'axios';
@@ -122,22 +123,24 @@ class App extends Component {
         <Particles className="particles" params={particlesOptions} />
         <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
 
-        {this.state.route === 'home' ? (
-          <div>
-            <Logo />
-            <Rank name={this.state.user.name} entries={this.state.user.entries} />
-            <ImageLinkForm onInputChange={this.onInputChange} onPictureSubmit={this.onPictureSubmit} />
-            <FaceRecognition boxes={boxes} imageUrl={imageUrl} />
-          </div>
-        ) : this.state.route === 'profile' ? (
-          <Profile name={name} email={email} onRouteChange={this.onRouteChange} />
-        ) : this.state.route === 'leaderboard' ? (
-          <Leaderboard />
-        ) : this.state.route === 'signin' ? (
-          <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
-        ) : (
-          <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
-        )}
+        <div className="main-container">
+          {this.state.route === 'home' ? (
+            <div>
+              <Logo onRouteChange={this.onRouteChange} />
+              <Rank name={this.state.user.name} entries={this.state.user.entries} />
+              <ImageLinkForm onInputChange={this.onInputChange} onPictureSubmit={this.onPictureSubmit} />
+              <FaceRecognition boxes={boxes} imageUrl={imageUrl} />
+            </div>
+          ) : this.state.route === 'profile' ? (
+            <Profile name={name} email={email} onRouteChange={this.onRouteChange} />
+          ) : this.state.route === 'leaderboard' ? (
+            <Leaderboard />
+          ) : this.state.route === 'signin' ? (
+            <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
+          ) : (
+            <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
+          )}
+        </div>
       </div>
     );
   }
