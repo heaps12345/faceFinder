@@ -39,12 +39,19 @@ nav p {
   color: #fff;
 }
 
+.rank-number {
+  font-size: 3rem;
+}
+
 @media only screen and (max-width: 569px) {
   .image-text {
     font-size: 0.75rem;
   }
   .rank {
     font-size: 1rem !important;
+  }
+  .rank-number {
+    font-size: 1rem;
   }
   article {
     width: 80% !important;
