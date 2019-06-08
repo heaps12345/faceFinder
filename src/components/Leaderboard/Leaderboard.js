@@ -19,7 +19,7 @@ class Leaderboard extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+ 
     const { topUsers } = this.state;
 
     return (

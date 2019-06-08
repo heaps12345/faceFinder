@@ -19,7 +19,7 @@ const Card = ({ user }) => {
           </div>
 
           <br />
-          <div className="f3 fw6 ph0 mh0">{'Entries :' + user.entries}</div>
+          <div className="f3 fw6 ph0 mh0">{'Entries: ' + user.entries}</div>
         </div>
       </main>
     </article>

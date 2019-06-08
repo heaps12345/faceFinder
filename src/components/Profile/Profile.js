@@ -24,7 +24,14 @@ class Profile extends Component {
         currentPassword: this.state.currentPassword,
         newPassword: this.state.newPassword
       })
-    });
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data === 'success') {
+          this.props.onRouteChange('home');
+        }
+      })
+      .catch(err => 'error changing password');
   };
 
   handleDeleteProfile = () => {
