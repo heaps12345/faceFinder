@@ -1,0 +1,165 @@
+.section-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh; }
+
+.section-image-link {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.leaderboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10rem; }
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .navigation__link {
+    margin-right: 2rem;
+    font-size: 1.5rem; }
+  .navigation__logo {
+    margin: 1rem auto 0 1rem;
+    margin-top: rem;
+    width: 6rem; }
+
+.signin-form {
+  background-color: #ecf0f1;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35rem; }
+  .signin-form__group {
+    width: 70%; }
+  .signin-form h2 {
+    font-size: 4rem; }
+  .signin-form__label {
+    font-size: 1.5rem; }
+  .signin-form__input {
+    height: 3rem;
+    background-color: inherit;
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0 3rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    color: 0 #000;
+    border: 1px solid #000; }
+    .signin-form__input:hover, .signin-form__input:active {
+      background-color: #000;
+      color: #fff;
+      border: none; }
+  .signin-form__button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+    color: #000; }
+    .signin-form__button:active {
+      transform: scale(0.9); }
+  .signin-form__register-link {
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-top: 0; }
+    .signin-form__register-link:hover {
+      color: gray; }
+
+.rank {
+  font-size: 3rem;
+  color: #fff;
+  line-height: 0.1; }
+  .rank__number {
+    font-size: 4rem; }
+
+.image-link-form__form {
+  width: 70rem;
+  border-radius: 1rem;
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px; }
+
+.image-link-form__input {
+  height: 4rem;
+  width: 52rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  margin: 3rem 0; }
+
+.image-link-form__btn {
+  font-size: 1.6rem;
+  padding: 0.8rem 3rem 1rem; }
+  .image-link-form__btn:hover {
+    transform: scale(1.1); }
+
+.image-link-form__text {
+  font-size: 2.5rem; }
+
+.leaderboard-card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  width: 35rem;
+  margin: 0 2rem 2rem 0; }
+  .leaderboard-card img {
+    margin-top: -1rem; }
+  .leaderboard-card h2 {
+    font-size: 3.5rem; }
+  .leaderboard-card p {
+    font-size: 2rem;
+    font-weight: 700; }
+
+.profile-form {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25); }
+  .profile-form__input {
+    height: 3rem;
+    background-color: inherit;
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0 3rem;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    color: 0 #000;
+    border: 1px solid #000; }
+    .profile-form__input:hover, .profile-form__input:active {
+      background-color: #000;
+      color: #fff;
+      border: none; }
+  .profile-form button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    transition: all 0.3s;
+    color: #000; }
+    .profile-form button:active {
+      transform: scale(0.9); }
+  .profile-form__delete-btn {
+    margin: 7rem 0 2rem; }
+  .profile-form label {
+    font-weight: 700;
+    font-size: 1.2rem; }
+  .profile-form img {
+    margin-bottom: 3rem; }
+  .profile-form h2 {
+    font-size: 3.5rem; }

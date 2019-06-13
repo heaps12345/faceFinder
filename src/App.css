@@ -34,14 +34,14 @@ nav p {
   font-size: 1.5rem;
 }
 
-.rank {
+/* .rank {
   font-size: 1.5rem !important;
   color: #fff;
 }
 
 .rank-number {
   font-size: 3rem;
-}
+} */
 
 @media only screen and (max-width: 569px) {
   .image-text {

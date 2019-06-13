@@ -5,6 +5,10 @@ body {
   background: linear-gradient(89deg, #f11712 0%, #0099f7 100%);
 }
 
+html {
+  font-size: 62.5%;
+}
+
 button {
   cursor: pointer;
 }

@@ -1,0 +1,13 @@
+/* line 1, src/sass/_layout.scss */
+.navigation {
+  background-color: #465161;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem; }
+  /* line 15, src/sass/_layout.scss */
+  .navigation__list-item {
+    list-style: none;
+    font-size: 2.5rem;
+    font-weight: 300; }

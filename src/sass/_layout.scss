@@ -1,0 +1,46 @@
+.section-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.section-image-link {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaderboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+
+  &__logo {
+    margin: 1rem auto 0 1rem;
+    margin-top: rem;
+
+    width: 6rem;
+  }
+}

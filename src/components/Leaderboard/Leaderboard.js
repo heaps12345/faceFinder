@@ -23,7 +23,7 @@ class Leaderboard extends React.Component {
     const { topUsers } = this.state;
 
     return (
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+      <div className="leaderboard">
         {topUsers.map((user, i) => {
           return <Card key={i} user={user}  />
          

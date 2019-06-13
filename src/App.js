@@ -9,6 +9,7 @@ import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
+import './css/style.css';
 import { slide as Menu } from 'react-burger-menu';
 import Profile from './components/Profile/Profile';
 import Leaderboard from './components/Leaderboard/Leaderboard';
@@ -125,12 +126,12 @@ class App extends Component {
 
         <div className="main-container">
           {this.state.route === 'home' ? (
-            <div>
-              <Logo onRouteChange={this.onRouteChange} />
+            <section className="section-image-link">
+              {/* <Logo onRouteChange={this.onRouteChange} /> */}
               <Rank name={this.state.user.name} entries={this.state.user.entries} />
               <ImageLinkForm onInputChange={this.onInputChange} onPictureSubmit={this.onPictureSubmit} />
               <FaceRecognition boxes={boxes} imageUrl={imageUrl} />
-            </div>
+            </section>
           ) : this.state.route === 'profile' ? (
             <Profile name={name} email={email} onRouteChange={this.onRouteChange} />
           ) : this.state.route === 'leaderboard' ? (
