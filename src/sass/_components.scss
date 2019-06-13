@@ -77,6 +77,8 @@
 }
 
 .image-link-form {
+  display: flex;
+  flex-direction: column;
   &__form {
     width: 70rem;
     border-radius: 1rem;
@@ -88,6 +90,10 @@
       linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
     background-color: #131313;
     background-size: 20px 20px;
+    @media (max-width: 25em) {
+      width: 54rem;
+      align-self: center;
+    }
   }
 
   &__input {
@@ -96,11 +102,17 @@
     padding: 1rem;
     font-size: 1.5rem;
     margin: 3rem 0;
+    @media (max-width: 25em) {
+      width: 40rem;
+    }
   }
 
   &__btn {
     font-size: 1.6rem;
     padding: 0.8rem 3rem 1rem;
+    @media (max-width: 25em) {
+      padding: 0.8rem 1.5rem 0.7rem;
+    }
 
     &:hover {
       transform: scale(1.1);
@@ -109,8 +121,31 @@
 
   &__text {
     font-size: 2.5rem;
+    @media (max-width: 25em) {
+      font-size: 2rem;
+    }
+  }
+
+  &__btn:active {
+    transform: translateY(10%);
   }
 }
+
+.face-img {
+  width: 40rem;
+  height: auto;
+}
+
+// .face-img {
+//   // align-self: flex-end;
+//   opacity: 1;
+//   position: absolute;
+//   top: -65%;
+//   right: -65%;
+//   width: 30rem;
+//   transition: all 3s;
+//   animation: moveInLeft 3s;
+// }
 
 .leaderboard-card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
@@ -188,4 +223,3 @@
     font-size: 3.5rem;
   }
 }
-

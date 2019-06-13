@@ -17,7 +17,7 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
-    "build-css": "node-sass src/sass/main.scss  src/css/style.css -w",
+    "build-css": "node-sass src/sass/main.scss  src/css/style.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -90,6 +90,7 @@ class App extends Component {
         headers: { 'Content-Type': 'application/json' }
       })
       .then(res => res.data);
+    console.log(resp);
 
     const count = await axios
       .put('https://face-finder-123.herokuapp.com/image', {

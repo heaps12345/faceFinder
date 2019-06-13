@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(89deg, #f11712 0%, #0099f7 100%);
+}
+
+html {
+  font-size: 62.5%;
+  @media (max-width: 46.875em) {
+    //750px
+    font-size: 50%;
+  }
+  @media (max-width: 35.9375em) {
+    // 575px
+    font-size: 35%;
+  }
+}
+
+@mixin md {
+  @media (max-width: 46.875em) {
+    // 750px
+    @content;
+  }
+}
+@mixin sm {
+  @media (max-width: 35.9375em) {
+    // 575px
+    @content;
+  }
+}
+@mixin xs {
+  @media (max-width: 25em) {
+    // 750px
+    @content;
+  }
+}

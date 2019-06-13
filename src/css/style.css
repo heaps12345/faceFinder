@@ -29,7 +29,8 @@
   align-items: center; }
   .navigation__link {
     margin-right: 2rem;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    cursor: pointer; }
   .navigation__logo {
     margin: 1rem auto 0 1rem;
     margin-top: rem;
@@ -88,28 +89,47 @@
   .rank__number {
     font-size: 4rem; }
 
-.image-link-form__form {
-  width: 70rem;
-  border-radius: 1rem;
-  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-  background-color: #131313;
-  background-size: 20px 20px; }
+.image-link-form {
+  display: flex;
+  flex-direction: column; }
+  .image-link-form__form {
+    width: 70rem;
+    border-radius: 1rem;
+    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px; }
+    @media (max-width: 25em) {
+      .image-link-form__form {
+        width: 54rem;
+        align-self: center; } }
+  .image-link-form__input {
+    height: 4rem;
+    width: 52rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 3rem 0; }
+    @media (max-width: 25em) {
+      .image-link-form__input {
+        width: 40rem; } }
+  .image-link-form__btn {
+    font-size: 1.6rem;
+    padding: 0.8rem 3rem 1rem; }
+    @media (max-width: 25em) {
+      .image-link-form__btn {
+        padding: 0.8rem 1.5rem 0.7rem; } }
+    .image-link-form__btn:hover {
+      transform: scale(1.1); }
+  .image-link-form__text {
+    font-size: 2.5rem; }
+    @media (max-width: 25em) {
+      .image-link-form__text {
+        font-size: 2rem; } }
+  .image-link-form__btn:active {
+    transform: translateY(10%); }
 
-.image-link-form__input {
-  height: 4rem;
-  width: 52rem;
-  padding: 1rem;
-  font-size: 1.5rem;
-  margin: 3rem 0; }
-
-.image-link-form__btn {
-  font-size: 1.6rem;
-  padding: 0.8rem 3rem 1rem; }
-  .image-link-form__btn:hover {
-    transform: scale(1.1); }
-
-.image-link-form__text {
-  font-size: 2.5rem; }
+.face-img {
+  width: 40rem;
+  height: auto; }
 
 .leaderboard-card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
@@ -163,3 +183,18 @@
     margin-bottom: 3rem; }
   .profile-form h2 {
     font-size: 3.5rem; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(89deg, #f11712 0%, #0099f7 100%); }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 46.875em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 35.9375em) {
+    html {
+      font-size: 35%; } }
