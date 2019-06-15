@@ -71,6 +71,7 @@
     font-size: 1.25rem;
     margin-bottom: 2rem;
     transition: all 0.3s;
+    cursor: pointer;
     color: #000; }
     .signin-form__button:active {
       transform: scale(0.9); }
@@ -112,6 +113,7 @@
         width: 40rem; } }
   .image-link-form__btn {
     font-size: 1.6rem;
+    cursor: pointer;
     padding: 0.8rem 3rem 1rem; }
     @media (max-width: 25em) {
       .image-link-form__btn {

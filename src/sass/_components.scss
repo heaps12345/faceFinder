@@ -47,6 +47,7 @@
     font-size: 1.25rem;
     margin-bottom: 2rem;
     transition: all 0.3s;
+    cursor: pointer;
 
     color: #000;
 
@@ -109,6 +110,7 @@
 
   &__btn {
     font-size: 1.6rem;
+    cursor: pointer;
     padding: 0.8rem 3rem 1rem;
     @media (max-width: 25em) {
       padding: 0.8rem 1.5rem 0.7rem;
